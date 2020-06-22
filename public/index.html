@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>To Do's!</title>
+    <title>ToDo's!</title>
     <script src="./js/bundle.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
 </head>
@@ -13,6 +13,11 @@
                 <span>{{todo}}</span>
             </li>
         </ul>
+        <form v-on:submit.prevent="saveNewTask" id="form">
+            <label for="newTask">New ToDo</label>
+            <input type="text" id="newTask" v-model="newTask"/>
+            <input type="submit" value="Save ToDo"/>
+        </form>
     </div>
 </body>
 </html>
