@@ -10,12 +10,20 @@
     <div id="app">
         <ul>
             <li v-for="todo in todos">
-                <span>{{todo}}</span>
+                <span>{{todo.name}}</span>
             </li>
         </ul>
         <form v-on:submit.prevent="saveNewTask" id="form">
             <label for="newTask">New ToDo</label>
             <input type="text" id="newTask" v-model="newTask"/>
+            <div id="radios">Priority
+                <input type="radio" value="low" id="low-priority" v-model="newPriority">
+                <label for="low-priority">Low</label>
+                <input type="radio" value="medium" id="medium-priority" v-model="newPriority">
+                <label for="medium-priority">Medium</label>
+                <input type="radio" value="high" id="high-priority" v-model="newPriority">
+                <label for="high-priority">High</label>
+            </div>
             <input type="submit" value="Save ToDo"/>
         </form>
     </div>
