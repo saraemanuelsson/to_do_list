@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="app">
+        <h1>ToDo's</h1>
         <ul>
             <li v-for="todo in todos">
                 <span>{{todo.name}}</span>
@@ -24,7 +25,7 @@
                 <input type="radio" value="high" id="high-priority" v-model="newPriority">
                 <label for="high-priority">High</label>
             </div>
-            <input type="submit" value="Save ToDo"/>
+            <input type="submit" value="Save"/>
         </form>
     </div>
 </body>

@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     name: this.newTask,
                     priority: this.newPriority});
                 this.newTask = "";
+                this.newPriority = "";
             }
         }
     });
