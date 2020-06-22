@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Vue({
         el: "#app",
         data: {
-
+            todos: ["Clean Windows", "Get Groceries", "Make Masks", "Bake Cake"]
         },
         methods: {
 
